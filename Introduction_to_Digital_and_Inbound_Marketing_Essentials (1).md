@@ -131,4 +131,3 @@ Spark operates in a cluster mode with:
 
 --- 
 
-This format mirrors the `.md5` structure for "AIRFLOW" while adapting content to PySpark’s ecosystem. Let me know if you’d like to expand any section!
