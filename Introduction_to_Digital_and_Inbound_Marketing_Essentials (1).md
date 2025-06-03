@@ -179,3 +179,13 @@ rdd = sc.parallelize([1, 2, 3])  # Create RDD
 squared = rdd.map(lambda x: x * x)  # Transformation  
 print(squared.collect())  # Action: [1, 4, 9]
 
+graph LR
+    A[RDD: myRDD] --> B[Partitions]
+    B --> C[Partition 1]
+    B --> D[Partition 2]
+    B --> E[Partition 3]
+    B --> F[...]
+    
+    C --> G[Memory]
+    D --> H[Memory]
+    E --> I[Disk]
