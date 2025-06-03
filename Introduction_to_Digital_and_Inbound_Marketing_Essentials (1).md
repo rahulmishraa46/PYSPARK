@@ -30,7 +30,7 @@ Apache Spark is an open-source, distributed computing system designed for big da
 
 
 ### Key Notes for GitHub:
-3. **RDD Navigation image** :
+1. **RDD Navigation image** :
    ```mermaid
    graph LR
        A[RDD: myRDD] --> B[Partitions]
@@ -119,7 +119,7 @@ Spark operates in a cluster mode with:
 - **Real-Time Analytics**: Use `Structured Streaming` for Kafka or Kinesis.  
 - **Data Lake Querying**: Analyze data in Delta Lake or Iceberg.  
 
-![PySpark Use Cases](https://miro.medium.com/max/1400/1*ZIH_wj5v1sZZ7k5qRajzOA.png)  
+ 
 
 ---
 
@@ -133,7 +133,7 @@ Spark operates in a cluster mode with:
 | 4. Execute | Trigger actions (write, collect). | `df.write.parquet("output/")` |  
 | 5. Monitor | Check Spark UI for stages/tasks. | `http://localhost:4040` |  
 
-![Spark UI](https://databricks.com/wp-content/uploads/2021/04/Spark-UI-Jobs-page.png)  
+ 
 
 ---
 
@@ -153,7 +153,7 @@ Spark operates in a cluster mode with:
 | Syntax | SQL-like + Python | Python-only |  
 | Lazy Evaluation | Yes (optimizes DAG) | No |  
 
-![PySpark vs Pandas](https://www.analyticsvidhya.com/wp-content/uploads/2021/06/pyspark-vs-pandas.png)  
+ 
 
 ---
 
