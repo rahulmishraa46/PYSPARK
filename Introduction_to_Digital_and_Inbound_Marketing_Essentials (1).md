@@ -27,6 +27,11 @@ Apache Spark is an open-source, distributed computing system designed for big da
 
 
 
+
+### Key Notes for GitHub:
+1. **Mermaid Support**: GitHub natively supports Mermaid diagrams in Markdown files
+2. **Rendering**: The diagram will automatically render when viewed on GitHub
+3. **Customization Options** (add these if needed):
    ```mermaid
    graph LR
        A[RDD: myRDD] --> B[Partitions]
@@ -43,7 +48,7 @@ Apache Spark is an open-source, distributed computing system designed for big da
        style G fill:#9f9
        style H fill:#9f9
        style I fill:#f99
-
+  
 **Key Features**:  
 - Fault-tolerant via lineage (recomputes lost partitions).  
 - Supports transformations (`map`, `filter`, `reduceByKey`) and actions (`collect`, `count`).  
