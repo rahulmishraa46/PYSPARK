@@ -194,14 +194,6 @@ Spark operates in a cluster mode with:
 
 --- 
 
-### Summary  
-This version includes:  
-1. **6 new images** for visual learning (architecture, RDDs, DataFrames, etc.).  
-2. **5 YouTube links** for tutorials and conceptual explanations.  
-3. **Better formatting** with tables, code blocks, and emojis.  
 
-Here’s the expanded **"Key Optimisation Techniques"** section with 5 additional optimization strategies for PySpark:
-
----
 
 
