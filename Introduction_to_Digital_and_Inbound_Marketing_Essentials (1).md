@@ -28,9 +28,10 @@ Apache Spark is an open-source, distributed computing system designed for big da
 
 
 
-### Key Notes for GitHub:
 
-   ```mermaid
+
+   
+```mermaid
    graph LR
        A[RDD: myRDD] --> B[Partitions]
        B --> C[Partition 1]
