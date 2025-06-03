@@ -25,8 +25,24 @@ Apache Spark is an open-source, distributed computing system designed for big da
 ### 1. Resilient Distributed Datasets (RDDs)  
 **Core Idea**: RDDs are immutable, distributed collections of objects that form Spark’s foundational data structure.  
 
-![RDD Diagram](https://spark.apache.org/docs/latest/img/spark-rdd.png)  
-*RDDs partition data across a cluster for parallel processing.*
+
+
+   ```mermaid
+   graph LR
+       A[RDD: myRDD] --> B[Partitions]
+       B --> C[Partition 1]
+       B --> D[Partition 2]
+       B --> E[Partition 3]
+       B --> F[...]
+       
+       C --> G[Memory]
+       D --> H[Memory]
+       E --> I[Disk]
+       
+       style A fill:#f9f,stroke:#333
+       style G fill:#9f9
+       style H fill:#9f9
+       style I fill:#f99
 
 **Key Features**:  
 - Fault-tolerant via lineage (recomputes lost partitions).  
@@ -47,7 +63,7 @@ print(squared.collect())  # Action: [1, 4, 9]
 ### 2. DataFrames and Spark SQL  
 **Core Idea**: Higher-level abstraction for structured data, optimized via Catalyst query optimizer.  
 
-![DataFrame vs RDD](https://databricks.com/wp-content/uploads/2018/03/PySpark-DataFrame-vs-RDD.png)  
+ 
 *DataFrames provide schema enforcement and SQL-like queries.*
 
 **Key Features**:  
@@ -162,35 +178,5 @@ This version includes:
 2. **5 YouTube links** for tutorials and conceptual explanations.  
 3. **Better formatting** with tables, code blocks, and emojis.  
 
-### 1. Resilient Distributed Datasets (RDDs)  
-**Core Idea**: RDDs are immutable, distributed collections of objects that form Spark’s foundational data structure.  
-
-![RDD Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.nashtechglobal.com%2Fthings-to-know-about-spark-rdd%2F&psig=AOvVaw2573xBUHU86RlHqlwdCpXO&ust=1749011350582000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCkgpW11I0DFQAAAAAdAAAAABAE)  
-*RDDs partition data across a cluster — one task per partition.*
-
-**Key Features**:  
-- Fault-tolerant via lineage (recomputes lost partitions).  
-- Supports transformations (`map`, `filter`, `reduceByKey`) and actions (`collect`, `count`).  
-- Low-level control for custom operations.  
 
 
-### Key Notes for GitHub:
-1. **Mermaid Support**: GitHub natively supports Mermaid diagrams in Markdown files
-2. **Rendering**: The diagram will automatically render when viewed on GitHub
-3. **Customization Options** (add these if needed):
-   ```mermaid
-   graph LR
-       A[RDD: myRDD] --> B[Partitions]
-       B --> C[Partition 1]
-       B --> D[Partition 2]
-       B --> E[Partition 3]
-       B --> F[...]
-       
-       C --> G[Memory]
-       D --> H[Memory]
-       E --> I[Disk]
-       
-       style A fill:#f9f,stroke:#333
-       style G fill:#9f9
-       style H fill:#9f9
-       style I fill:#f99
