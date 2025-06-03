@@ -165,7 +165,7 @@ This version includes:
 ### 1. Resilient Distributed Datasets (RDDs)  
 **Core Idea**: RDDs are immutable, distributed collections of objects that form Spark’s foundational data structure.  
 
-![RDD Diagram](https://miro.medium.com/v2/resize:fit:828/format:webp/1*8pXKwWoYXrT9DFn0_UMv5g.png)  
+![RDD Diagram](https://i.imgur.com/I7X9wTx.png)  
 *RDDs partition data across a cluster — one task per partition.*
 
 **Key Features**:  
