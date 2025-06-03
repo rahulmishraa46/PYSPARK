@@ -162,4 +162,20 @@ This version includes:
 2. **5 YouTube links** for tutorials and conceptual explanations.  
 3. **Better formatting** with tables, code blocks, and emojis.  
 
-Let me know if you'd like to add more specific images/links!
+### 1. Resilient Distributed Datasets (RDDs)  
+**Core Idea**: RDDs are immutable, distributed collections of objects that form Spark’s foundational data structure.  
+
+![RDD Diagram](https://miro.medium.com/v2/resize:fit:828/format:webp/1*8pXKwWoYXrT9DFn0_UMv5g.png)  
+*RDDs partition data across a cluster — one task per partition.*
+
+**Key Features**:  
+- Fault-tolerant via lineage (recomputes lost partitions).  
+- Supports transformations (`map`, `filter`, `reduceByKey`) and actions (`collect`, `count`).  
+- Low-level control for custom operations.  
+
+**Example**:  
+```python
+rdd = sc.parallelize([1, 2, 3])  # Create RDD  
+squared = rdd.map(lambda x: x * x)  # Transformation  
+print(squared.collect())  # Action: [1, 4, 9]
+
