@@ -137,10 +137,27 @@ Spark operates in a cluster mode with:
 
 ---
 
-## Key Optimizations  
-- **Partitioning**: Balance data skew with `repartition()`.  
-- **Broadcast Variables**: Share small datasets efficiently.  
-- **Avoid Shuffles**: Minimize operations like `groupByKey`.  
+## Key Optimisation Techniques  
+- **Partitioning**: Balance data skew with `repartition()` or `coalesce()` to avoid over-partitioning.  
+- **Broadcast Variables**: Use `broadcast()` for small datasets in joins to reduce shuffling.  
+- **Avoid Shuffles**: Minimize expensive operations like `groupByKey`; prefer `reduceByKey` for aggregations.  
+- **Caching**: Persist frequently used DataFrames/RDDs in memory with `df.cache()` or `df.persist()`.  
+- **Predicate Pushdown**: Leverage Spark SQL’s optimizer to filter data early in queries (e.g., `df.filter("date > '2023-01-01'")`).  
+- **Tungsten Optimizations**: Enable off-heap memory and optimized serialization via `spark.sql.tungsten.enabled=true`.  
+- **Join Strategies**: Use broadcast joins for small tables (`spark.conf.set("spark.sql.autoBroadcastJoinThreshold", "10MB")`) and bucketing for large tables.  
+- **Parallelism**: Adjust `spark.default.parallelism` to match cluster cores (e.g., `spark.conf.set("spark.default.parallelism", "200")`).  
+- **Memory Management**: Tune `spark.executor.memory` and `spark.memory.fraction` to avoid spills to disk.  
+- **File Formats**: Use columnar formats (Parquet/ORC) with predicate pushdown and partition pruning.  
+
+📹 **Deep Dive**: [Advanced PySpark Tuning (YouTube)](https://www.youtube.com/watch?v=9xDMNzJr4tI)  
+
+--- 
+
+### Why These Additions?  
+1. **Coverage**: Expands from basic to advanced optimizations (Tungsten, bucketing, memory tuning).  
+2. **Practicality**: Directly actionable configs (e.g., `autoBroadcastJoinThreshold`).  
+3. **Performance Focus**: Addresses common bottlenecks (shuffles, spills, joins).  
+  
 
 📹 **Optimization Tips**: [PySpark Performance (YouTube)](https://www.youtube.com/watch?v=9xDMNzJr4tI)  
 
@@ -183,5 +200,8 @@ This version includes:
 2. **5 YouTube links** for tutorials and conceptual explanations.  
 3. **Better formatting** with tables, code blocks, and emojis.  
 
+Here’s the expanded **"Key Optimisation Techniques"** section with 5 additional optimization strategies for PySpark:
+
+---
 
 
