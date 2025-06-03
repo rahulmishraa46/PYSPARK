@@ -173,19 +173,24 @@ This version includes:
 - Supports transformations (`map`, `filter`, `reduceByKey`) and actions (`collect`, `count`).  
 - Low-level control for custom operations.  
 
-**Example**:  
-```python
-rdd = sc.parallelize([1, 2, 3])  # Create RDD  
-squared = rdd.map(lambda x: x * x)  # Transformation  
-print(squared.collect())  # Action: [1, 4, 9]
 
-graph LR
-    A[RDD: myRDD] --> B[Partitions]
-    B --> C[Partition 1]
-    B --> D[Partition 2]
-    B --> E[Partition 3]
-    B --> F[...]
-    
-    C --> G[Memory]
-    D --> H[Memory]
-    E --> I[Disk]
+### Key Notes for GitHub:
+1. **Mermaid Support**: GitHub natively supports Mermaid diagrams in Markdown files
+2. **Rendering**: The diagram will automatically render when viewed on GitHub
+3. **Customization Options** (add these if needed):
+   ```mermaid
+   graph LR
+       A[RDD: myRDD] --> B[Partitions]
+       B --> C[Partition 1]
+       B --> D[Partition 2]
+       B --> E[Partition 3]
+       B --> F[...]
+       
+       C --> G[Memory]
+       D --> H[Memory]
+       E --> I[Disk]
+       
+       style A fill:#f9f,stroke:#333
+       style G fill:#9f9
+       style H fill:#9f9
+       style I fill:#f99
