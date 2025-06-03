@@ -192,16 +192,6 @@ Spark operates in a cluster mode with:
 - **Tutorials**: [Databricks PySpark Guide](https://docs.databricks.com/spark/latest/dataframes-datasets/introduction-to-dataframes-python.html).  
 - **YouTube Playlist**: [PySpark for Beginners](https://www.youtube.com/playlist?list=PLkz1SCf5iB4dZ2RNKCu7W9o2OtZweGY6x).  
 
---- 
 
-### Summary  
-This version includes:  
-1. **6 new images** for visual learning (architecture, RDDs, DataFrames, etc.).  
-2. **5 YouTube links** for tutorials and conceptual explanations.  
-3. **Better formatting** with tables, code blocks, and emojis.  
-
-Here’s the expanded **"Key Optimisation Techniques"** section with 5 additional optimization strategies for PySpark:
-
----
 
 
