@@ -182,7 +182,7 @@ Spark operates in a cluster mode with:
 
 **Dataset**: [MovieLens Dataset](https://grouplens.org/datasets/movielens/)  
 
-📹 **Tutorial**: [PySpark Project Walkthrough (YouTube)](https://www.youtube.com/watch?v=W4mjfJ6XmMA)  
+📹 **Tutorial**: [PySpark Project Walkthrough (YouTube)](https://www.youtube.com/watch?v=rgb6Yy4IGpk)  
 
 ---
 
