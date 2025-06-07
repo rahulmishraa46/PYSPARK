@@ -10,7 +10,7 @@
 ## Introduction  
 Apache Spark is an open-source, distributed computing system designed for big data processing. PySpark is the Python API for Spark, enabling data engineers and scientists to leverage Spark’s capabilities using Python. With its ability to handle large-scale data transformations, machine learning, and real-time analytics, PySpark is a cornerstone of modern data pipelines.  
 
-📹 **Watch Intro**: [What is PySpark? (YouTube)](https://www.youtube.com/watch?v=_C8kWso4ne4)  
+📹 **Watch Intro**: [What is PySpark? (YouTube)](https://www.youtube.com/watch?v=VZ7EHLdrVo0&pp=0gcJCdgAo7VqN5tD)  
 
 ### Learning Objectives  
 - Understand PySpark’s architecture and core components (RDDs, DataFrames, Spark SQL).  
