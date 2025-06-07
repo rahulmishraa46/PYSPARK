@@ -61,7 +61,7 @@ squared = rdd.map(lambda x: x * x)  # Transformation
 print(squared.collect())  # Action: [1, 4, 9]
 ```
 
-📹 **RDD Tutorial**: [PySpark RDDs Explained (YouTube)](https://www.youtube.com/watch?v=apCkGxLuzWI)  
+📹 **RDD Tutorial**: [PySpark RDDs Explained (YouTube)](https://www.youtube.com/watch?v=VlZYq0oHCk4)  
 
 ---
 
@@ -82,7 +82,7 @@ df = spark.read.json("data.json")  # Load data
 df.select("name", "age").show()  # Query
 ```
 
-📹 **DataFrame Tutorial**: [PySpark DataFrames (YouTube)](https://www.youtube.com/watch?v=ti3aC1m3rE8)  
+📹 **DataFrame Tutorial**: [PySpark DataFrames (YouTube)](https://www.youtube.com/watch?v=ragDjDfwWGM)  
 
 ---
 
@@ -109,7 +109,7 @@ Spark operates in a cluster mode with:
 
 ![Spark Architecture](https://spark.apache.org/docs/latest/img/cluster-overview.png)  
 
-📹 **Architecture Deep Dive**: [How Spark Works (YouTube)](https://www.youtube.com/watch?v=7ooZ4S7Ay6Y)  
+📹 **Architecture Deep Dive**: [How Spark Works (YouTube)](https://www.youtube.com/watch?v=F3-8jFI_OPY)  
 
 ---
 
@@ -149,7 +149,7 @@ Spark operates in a cluster mode with:
 - **Memory Management**: Tune `spark.executor.memory` and `spark.memory.fraction` to avoid spills to disk.  
 - **File Formats**: Use columnar formats (Parquet/ORC) with predicate pushdown and partition pruning.  
 
-📹 **Deep Dive**: [Advanced PySpark Tuning (YouTube)](https://www.youtube.com/watch?v=9xDMNzJr4tI)  
+📹 **Deep Dive**: [Advanced PySpark Tuning (YouTube)](https://www.youtube.com/watch?v=5peQThvQmQk)  
 
 --- 
 
@@ -159,7 +159,7 @@ Spark operates in a cluster mode with:
 3. **Performance Focus**: Addresses common bottlenecks (shuffles, spills, joins).  
   
 
-📹 **Optimization Tips**: [PySpark Performance (YouTube)](https://www.youtube.com/watch?v=9xDMNzJr4tI)  
+📹 **Optimization Tips**: [PySpark Performance (YouTube)](https://www.youtube.com/watch?v=E7GSNb9rJHs)  
 
 ---
 
@@ -190,7 +190,7 @@ Spark operates in a cluster mode with:
 - **Documentation**: [Spark Official Docs](https://spark.apache.org/docs/latest/api/python/)  
 - **Books**: *Learning PySpark* by Tomasz Drabas.  
 - **Tutorials**: [Databricks PySpark Guide](https://docs.databricks.com/spark/latest/dataframes-datasets/introduction-to-dataframes-python.html).  
-- **YouTube Playlist**: [PySpark for Beginners](https://www.youtube.com/playlist?list=PLkz1SCf5iB4dZ2RNKCu7W9o2OtZweGY6x).  
+- **YouTube Playlist**: [PySpark for Beginners](https://www.youtube.com/watch?v=EB8lfdxpirM).  
 
 --- 
 
